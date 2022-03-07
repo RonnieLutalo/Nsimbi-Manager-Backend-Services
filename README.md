@@ -13,5 +13,8 @@ Software system aimed at helping users to keep track of their expenses easily.
 - React.js
 - BootStrap
 
+### System Architecture
+This System uses the [Onion Architecture (Clean Architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) for it's implementation
+
 #### Data Model
 
