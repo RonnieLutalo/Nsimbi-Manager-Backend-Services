@@ -11,3 +11,4 @@ Software system aimed at helping users to keep track of their expenses easily.
 - Fluent Validation
 - xUnit
 - React.js
+- BootStrap
