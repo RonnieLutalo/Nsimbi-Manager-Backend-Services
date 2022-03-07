@@ -15,7 +15,7 @@ namespace Application.Features.ExpenseCategories.Handlers.Queries
 {
     public class GetExpenseCategoryDetailRequestHandler : IRequestHandler<GetExpenseCategoryDetailRequest, ExpenseCategoryDto>
     {
-        private readonly IExpenseCategoryRepository _ExpenseCategoryRepository;
+        private readonly IExpenseCategoryRepository _expenseCategoryRepository;
         private readonly IMapper _mapper;
 
         public GetExpenseCategoryDetailRequestHandler(IExpenseCategoryRepository expenseCategoryRepository, IMapper mapper)
@@ -25,8 +25,8 @@ namespace Application.Features.ExpenseCategories.Handlers.Queries
         }
         public async Task<ExpenseCategoryDto> Handle(GetExpenseCategoryDetailRequest request, CancellationToken cancellationToken)
         {
-            var expenseCategory = await _expenseCategoryRepository.Get(request.Id);
-            return _mapper.Map<ExpenseCategoryDto>(expenseCategory);
+            var leaveType = await _expenseCategoryRepository.Get(request.Id);
+            return _mapper.Map<ExpenseCategoryDto>(leaveType);
         }
     }
 }

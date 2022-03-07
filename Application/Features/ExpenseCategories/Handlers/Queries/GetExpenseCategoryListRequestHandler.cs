@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Application.DTOs;
 using Application.DTOs.ExpenseCategory;
-using Application.Features.LeaveTypes.Requests;
+using Application.Features.ExpenseCategories.Requests;
 using Application.Features.ExpenseCategories.Requests.Queries;
 using Application.Contracts.Persistence;
 using MediatR;
@@ -11,23 +11,23 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.Features.LeaveTypes.Handlers.Queries
+namespace Application.Features.ExpenseCategories.Handlers.Queries
 {
     public class GetExpenseCategoryListRequestHandler : IRequestHandler<GetExpenseCategoryListRequest, List<ExpenseCategoryDto>>
     {
-        private readonly IExpenseCategoryRepository _leaveTypeRepository;
+        private readonly IExpenseCategoryRepository _expenseCategoryRepository;
         private readonly IMapper _mapper;
 
-        public GetExpenseCategoryListRequestHandler(IExpenseCategoryRepository leaveTypeRepository, IMapper mapper)
+        public GetExpenseCategoryListRequestHandler(IExpenseCategoryRepository expenseCategoryRepository, IMapper mapper)
         {
-            _leaveTypeRepository = leaveTypeRepository;
+            _expenseCategoryRepository = expenseCategoryRepository;
             _mapper = mapper;
         }
 
         public async Task<List<ExpenseCategoryDto>> Handle(GetExpenseCategoryListRequest request, CancellationToken cancellationToken)
         {
-            var leaveTypes = await _leaveTypeRepository.GetAll();
-            return _mapper.Map<List<ExpenseCategoryDto>>(leaveTypes);
+            var expenseCategories = await _expenseCategoryRepository.GetAll();
+            return _mapper.Map<List<ExpenseCategoryDto>>(expenseCategories);
         }
     }
 }
