@@ -1,11 +1,10 @@
-﻿using Domain.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Domain
+namespace Application.DTOs.ExpenseCategory
 {
-    public class ExpenseCategory : BaseDomainEntity
+    public interface IExpenseCategoryDto
     {
         public string CategoryName { get; set; }
     }
