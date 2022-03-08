@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Application.DTOs.Common;
+using Application.DTOs.ExpenseAllocation;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.DTOs.Expense
+namespace Application.DTOs.ExpenseAllocation
 {
-    public interface IExpenseDto
+    public class UpdateExpenseAllocationDto : BaseDto, IExpenseAllocationDto
     {
         public string Description { get; set; }
         public double Amount { get; set; }

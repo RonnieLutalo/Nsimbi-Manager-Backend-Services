@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Application.DTOs.Expense.Validators
+namespace Application.DTOs.ExpenseAllocation.Validators
 {
-    public class IExpenseDtoValidator : AbstractValidator<IExpenseDto>
+    public class IExpenseAllocationDtoValidator : AbstractValidator<IExpenseAllocationDto>
     {
         private readonly IExpenseCategoryRepository _expenseCategoryRepository;
 
-        public IExpenseDtoValidator(IExpenseCategoryRepository expenseCategoryRepository)
+        public IExpenseAllocationDtoValidator(IExpenseCategoryRepository expenseCategoryRepository)
         {
             _expenseCategoryRepository = expenseCategoryRepository;
 

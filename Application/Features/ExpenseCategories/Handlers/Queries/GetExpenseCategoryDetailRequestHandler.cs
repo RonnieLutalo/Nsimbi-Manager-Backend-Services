@@ -25,8 +25,8 @@ namespace Application.Features.ExpenseCategories.Handlers.Queries
         }
         public async Task<ExpenseCategoryDto> Handle(GetExpenseCategoryDetailRequest request, CancellationToken cancellationToken)
         {
-            var leaveType = await _expenseCategoryRepository.Get(request.Id);
-            return _mapper.Map<ExpenseCategoryDto>(leaveType);
+            var expenseCategory = await _expenseCategoryRepository.Get(request.Id);
+            return _mapper.Map<ExpenseCategoryDto>(expenseCategory);
         }
     }
 }

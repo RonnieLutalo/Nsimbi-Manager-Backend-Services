@@ -25,12 +25,12 @@ namespace Application.Features.ExpenseCategories.Handlers.Commands
 
         public async Task<Unit> Handle(DeleteExpenseCategoryCommand request, CancellationToken cancellationToken)
         {
-            var leaveType = await _unitOfWork.ExpenseCategoryRepository.Get(request.Id);
+            var expenseCategory = await _unitOfWork.ExpenseCategoryRepository.Get(request.Id);
 
-            if (leaveType == null)
+            if (expenseCategory == null)
                 throw new NotFoundException(nameof(ExpenseCategory), request.Id);
 
-            await _unitOfWork.ExpenseCategoryRepository.Delete(leaveType);
+            await _unitOfWork.ExpenseCategoryRepository.Delete(expenseCategory);
             await _unitOfWork.Save();
 
             return Unit.Value;

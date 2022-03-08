@@ -6,16 +6,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Application.DTOs.Expense.Validators
+namespace Application.DTOs.ExpenseAllocation.Validators
 {
-    public class UpdateExpenseDtoValidator : AbstractValidator<UpdateExpenseDto>
+    public class UpdateExpenseAllocationDtoValidator : AbstractValidator<UpdateExpenseAllocationDto>
     {
         private readonly IExpenseCategoryRepository _expenseCategoryRepository;
 
-        public UpdateExpenseDtoValidator(IExpenseCategoryRepository expenseCategoryRepository)
+        public UpdateExpenseAllocationDtoValidator(IExpenseCategoryRepository expenseCategoryRepository)
         {
             _expenseCategoryRepository = expenseCategoryRepository;
-            Include(new IExpenseDtoValidator(_expenseCategoryRepository));
+            Include(new IExpenseAllocationDtoValidator(_expenseCategoryRepository));
 
             RuleFor(p => p.Id).NotNull().WithMessage("{PropertyName} must be present");
         }

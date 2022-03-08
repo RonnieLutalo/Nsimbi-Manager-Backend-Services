@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.DTOs.Expense
+namespace Application.DTOs.ExpenseAllocation
 {
-    public class CreateExpenseDto
+    public class CreateExpenseAllocationDto
     {
         public int ExpenseCategoryId { get; set; }
     }

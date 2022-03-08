@@ -5,9 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.DTOs.Expense
+namespace Application.DTOs.ExpenseAllocation
 {
-    public class ExpenseDto : BaseDto
+    public class ExpenseAllocationDto : BaseDto
     {
         public ExpenseCategoryDto ExpenseCategory { get; set; }
         public int ExpenseCategoryId { get; set; }

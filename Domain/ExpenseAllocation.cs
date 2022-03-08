@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Domain
 {
-    public class Expense: BaseDomainEntity
+    public class ExpenseAllocation: BaseDomainEntity
     {
         public string Description { get; set; }
         public double Amount { get; set; }
