@@ -33,8 +33,8 @@ namespace ExpenseTrackerWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<List<ExpenseCategoryDto>>> Get()
         {
-            var leaveTypes = await _mediator.Send(new GetExpenseCategoryListRequest());
-            return Ok(leaveTypes);
+            var expenseCategories = await _mediator.Send(new GetExpenseCategoryListRequest());
+            return Ok(expenseCategories);
         }
 
         // GET api/<ExpenseCategoriesController>/5

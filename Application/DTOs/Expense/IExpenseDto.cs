@@ -1,13 +1,13 @@
-﻿using Domain.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Domain
+namespace Application.DTOs.Expense
 {
-    public class ExpenseDetails : BaseDomainEntity
+    public interface IExpenseDto
     {
         public string Description { get; set; }
         public double Amount { get; set; }
+        public int ExpenseCategoryId { get; set; }
     }
 }
