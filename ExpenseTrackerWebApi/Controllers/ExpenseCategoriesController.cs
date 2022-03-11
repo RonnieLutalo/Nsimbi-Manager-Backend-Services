@@ -18,12 +18,12 @@ namespace ExpenseTrackerWebApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    public class ExpenseCategoryController : ControllerBase
+    public class ExpenseCategoriesController : ControllerBase
     {
         private readonly IMediator _mediator;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ExpenseCategoryController(IMediator mediator, IHttpContextAccessor httpContextAccessor)
+        public ExpenseCategoriesController(IMediator mediator, IHttpContextAccessor httpContextAccessor)
         {
             _mediator = mediator;
             this._httpContextAccessor = httpContextAccessor;
@@ -49,7 +49,7 @@ namespace ExpenseTrackerWebApi.Controllers
         [HttpPost]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         public async Task<ActionResult<BaseCommandResponse>> Post([FromBody] CreateExpenseCategoryDto expenseCategory)
         {
             var user = _httpContextAccessor.HttpContext.User;
@@ -63,7 +63,7 @@ namespace ExpenseTrackerWebApi.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         public async Task<ActionResult> Put([FromBody] ExpenseCategoryDto expenseCategory)
         {
             var command = new UpdateExpenseCategoryCommand { ExpenseCategoryDto = expenseCategory };
@@ -76,7 +76,7 @@ namespace ExpenseTrackerWebApi.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         public async Task<ActionResult> Delete(int id)
         {
             var command = new DeleteExpenseCategoryCommand { Id = id };
