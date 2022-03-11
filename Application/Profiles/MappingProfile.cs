@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
 using Application.DTOs;
+using Application.DTOs.ExpenseAllocation;
 using Application.DTOs.ExpenseCategory;
 using Domain;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Application.Profiles
 {
@@ -12,7 +10,13 @@ namespace Application.Profiles
     {
         public MappingProfile()
         {
-            // Expense Category mappings
+            #region ExpenseAllocation Mappings
+            CreateMap<ExpenseAllocation, ExpenseAllocationDto>().ReverseMap();
+            CreateMap<ExpenseAllocation, ExpenseAllocationListDto>().ReverseMap();
+            CreateMap<ExpenseAllocation, CreateExpenseAllocationtDto>().ReverseMap();
+            CreateMap<ExpenseAllocation, UpdateExpenseAllocationDto>().ReverseMap();
+            #endregion ExpenseAllocation
+
             CreateMap<ExpenseCategory, ExpenseCategoryDto>().ReverseMap();
             CreateMap<ExpenseCategory, CreateExpenseCategoryDto>().ReverseMap();
         }
