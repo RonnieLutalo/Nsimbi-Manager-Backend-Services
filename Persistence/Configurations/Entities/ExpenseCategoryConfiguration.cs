@@ -14,13 +14,13 @@ namespace Persistence.Configurations.Entities
             builder.HasData(
                 new ExpenseCategory
                 {
-                    Id = 1, 
+                    Id = 1,
                     CategoryName = "Groceries"
                 },
                 new ExpenseCategory
                 {
                     Id = 2,
-                    CategoryName = "Credit Card"
+                    CategoryName = "Transport & Logistics"
                 }
             );
         }

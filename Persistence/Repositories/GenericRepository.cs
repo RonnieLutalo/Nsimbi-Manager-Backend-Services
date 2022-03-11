@@ -1,17 +1,15 @@
 ﻿using Application.Contracts.Persistence;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly AppDbContext _dbContext;
+        private readonly ExpenseTrackerDbContext _dbContext;
 
-        public GenericRepository(AppDbContext dbContext)
+        public GenericRepository(ExpenseTrackerDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -25,12 +23,6 @@ namespace Persistence.Repositories
         public async Task Delete(T entity)
         {
             _dbContext.Set<T>().Remove(entity);
-        }
-
-        public async Task<bool> Exists(int id)
-        {
-            var entity = await Get(id);
-            return entity != null;
         }
 
         public async Task<T> Get(int id)

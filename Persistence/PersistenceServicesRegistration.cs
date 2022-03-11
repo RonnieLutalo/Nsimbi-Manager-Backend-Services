@@ -3,9 +3,6 @@ using Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Persistence
 {
@@ -13,15 +10,16 @@ namespace Persistence
     {
         public static IServiceCollection ConfigurePersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<AppDbContext>(options =>
+            services.AddDbContext<ExpenseTrackerDbContext>(options =>
                options.UseSqlServer(
-                   configuration.GetConnectionString("AppDbConnectionString")));
+                   configuration.GetConnectionString("ExpenseTrackerConnectionString")));
 
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddScoped<IExpenseCategoryRepository, ExpenseCategoryRepository>();
+            services.AddScoped<IExpenseAllocationRepository, ExpenseAllocationRepository>();
 
             return services;
         }
