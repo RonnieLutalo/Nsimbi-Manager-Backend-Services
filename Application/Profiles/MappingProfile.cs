@@ -13,7 +13,7 @@ namespace Application.Profiles
             #region ExpenseAllocation Mappings
             CreateMap<ExpenseAllocation, ExpenseAllocationDto>().ReverseMap();
             CreateMap<ExpenseAllocation, ExpenseAllocationListDto>().ReverseMap();
-            CreateMap<ExpenseAllocation, CreateExpenseAllocationtDto>().ReverseMap();
+            CreateMap<ExpenseAllocation, CreateExpenseAllocationDto>().ReverseMap();
             CreateMap<ExpenseAllocation, UpdateExpenseAllocationDto>().ReverseMap();
             #endregion ExpenseAllocation
 
