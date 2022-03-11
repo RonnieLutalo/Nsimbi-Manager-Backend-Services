@@ -7,7 +7,7 @@ Software system aimed at helping users to keep track of their expenses easily.
 - ASP.NET Core 6 for API and Class Libraries
 - Entity Framework Core for Data Access
 - MediatR 
-- AutoMapper for Domain Object mapping
+- AutoMapper for Domain model object mapping
 - Fluent Validation 
 - xUnit for UnitTest in ASP.NET Core
 - React.js for Frontend Client Application
