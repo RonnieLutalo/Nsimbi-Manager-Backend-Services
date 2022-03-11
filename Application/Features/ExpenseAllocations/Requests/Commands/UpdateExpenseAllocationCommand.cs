@@ -1,14 +1,12 @@
-﻿using HR.LeaveManagement.Application.DTOs.LeaveAllocation;
-using HR.LeaveManagement.Application.DTOs.LeaveType;
+﻿using Application.DTOs.ExpenseAllocation;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Requests.Commands
+namespace Application.Features.ExpenseAllocations.Requests.Commands
 {
     public class UpdateExpenseAllocationCommand : IRequest<Unit>
     {
-        public UpdateLeaveAllocationDto LeaveAllocationDto { get; set; }
+        public int Id { get; set; }
+
+        public UpdateExpenseAllocationDto ExpenseAllocationDto { get; set; }
     }
 }

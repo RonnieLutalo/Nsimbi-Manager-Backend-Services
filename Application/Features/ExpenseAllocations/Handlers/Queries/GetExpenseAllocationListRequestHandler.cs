@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Application.DTOs;
 using Application.DTOs.ExpenseAllocation;
 using Application.Features.ExpenseAllocations.Requests.Queries;
 using Application.Contracts.Persistence;
@@ -7,14 +6,14 @@ using MediatR;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Application.Contracts.Identity;
 using Domain;
+using Application.Contracts.Identity;
+using Microsoft.AspNetCore.Http;
 using Application.Constants;
 
-namespace Application.Features.LeaveAllocations.Handlers.Queries
+namespace Application.Features.ExpenseAllocations.Handlers.Queries
 {
-    public class GetExpenseAllocationListRequestHandler : IRequestHandler<GetExpenseAllocationListRequest, List<ExpenseAllocationDto>>
+    public class GetExpenseAllocationListRequestHandler : IRequestHandler<GetExpenseAllocationListRequest, List<ExpenseAllocationListDto>>
     {
         private readonly IExpenseAllocationRepository _expenseAllocationRepository;
         private readonly IMapper _mapper;
@@ -22,8 +21,8 @@ namespace Application.Features.LeaveAllocations.Handlers.Queries
         private readonly IUserService _userService;
 
         public GetExpenseAllocationListRequestHandler(IExpenseAllocationRepository expenseAllocationRepository,
-             IMapper mapper,
-             IHttpContextAccessor httpContextAccessor,
+            IMapper mapper,
+            IHttpContextAccessor httpContextAccessor,
             IUserService userService)
         {
             _expenseAllocationRepository = expenseAllocationRepository;
@@ -32,10 +31,10 @@ namespace Application.Features.LeaveAllocations.Handlers.Queries
             this._userService = userService;
         }
 
-        public async Task<List<ExpenseAllocationDto>> Handle(GetExpenseAllocationListRequest request, CancellationToken cancellationToken)
+        public async Task<List<ExpenseAllocationListDto>> Handle(GetExpenseAllocationListRequest request, CancellationToken cancellationToken)
         {
             var expenseAllocations = new List<ExpenseAllocation>();
-            var allocations = new List<ExpenseAllocationDto>();
+            var requests = new List<ExpenseAllocationListDto>();
 
             if (request.IsLoggedInUser)
             {
@@ -43,24 +42,26 @@ namespace Application.Features.LeaveAllocations.Handlers.Queries
                     q => q.Type == CustomClaimTypes.Uid)?.Value;
                 expenseAllocations = await _expenseAllocationRepository.GetExpenseAllocationsWithDetails(userId);
 
-                var employee = await _userService.GetEmployee(userId);
-                allocations = _mapper.Map<List<ExpenseAllocationDto>>(expenseAllocations);
-                foreach (var alloc in allocations)
+                var regularAppUser = await _userService.GetRegularAppUser(userId);
+                requests = _mapper.Map<List<ExpenseAllocationListDto>>(expenseAllocations);
+                foreach (var req in requests)
                 {
-                    alloc.Employee = employee;
+                    req.RegularAppUser = regularAppUser;
                 }
             }
             else
             {
                 expenseAllocations = await _expenseAllocationRepository.GetExpenseAllocationsWithDetails();
-                allocations = _mapper.Map<List<ExpenseAllocationDto>>(expenseAllocations);
-                foreach (var req in allocations)
+                requests = _mapper.Map<List<ExpenseAllocationListDto>>(expenseAllocations);
+                foreach (var req in requests)
                 {
-                    req.Employee = await _userService.GetEmployee(req.EmployeeId);
+                    req.RegularAppUser = await _userService.GetRegularAppUser(req.RegularAppUserAccountHolderId);
                 }
             }
 
-            return allocations;
+            return requests;
+
+            
         }
     }
 }
