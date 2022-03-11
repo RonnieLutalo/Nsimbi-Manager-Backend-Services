@@ -12,6 +12,7 @@ Software solution aimed at helping users to keep track of their expenses easily.
 - xUnit for Unit Tests in ASP.NET Core
 - React.js for Frontend Client Application
 - BootStrap for Frontend/UI application styling 
+- MVC Razor Pages for Frontend Client Application
 
 ### System Architecture 
 This System uses the [Onion Architecture (Clean Architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) for it's implementation
