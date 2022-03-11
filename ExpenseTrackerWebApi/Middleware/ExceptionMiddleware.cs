@@ -1,11 +1,6 @@
 ﻿using Application.Exceptions;
-using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
 
 namespace ExpenseTrackerWebApi.Middleware
 {
@@ -21,7 +16,8 @@ namespace ExpenseTrackerWebApi.Middleware
             try
             {
                 await _next(httpContext);
-            }            catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 await HandleExceptionAsync(httpContext, ex);
             }
@@ -30,11 +26,11 @@ namespace ExpenseTrackerWebApi.Middleware
         {
             context.Response.ContentType = "application/json";
             HttpStatusCode statusCode = HttpStatusCode.InternalServerError;
-            string result = JsonConvert.SerializeObject(new ErrorDeatils 
-                { 
-                    ErrorMessage = exception.Message, 
-                    ErrorType = "Failure" 
-                });
+            string result = JsonConvert.SerializeObject(new ErrorDeatils
+            {
+                ErrorMessage = exception.Message,
+                ErrorType = "Failure"
+            });
 
             switch (exception)
             {
