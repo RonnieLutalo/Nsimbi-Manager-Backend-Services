@@ -4,7 +4,8 @@
 Software solution aimed at helping users to keep track of their expenses easily.
 
 #### Technologies 🚀
-- ASP.NET Core 6 for API and Class Libraries
+- ASP.NET Core 6 for API and MVC Razor Pages
+- .NET Stadard 2.1 for Class Libraries
 - Entity Framework Core for Data Access
 - MediatR 
 - AutoMapper for Domain model object mapping
