@@ -1,7 +1,7 @@
 ## Expense Tracker
 
 ### Overview
-Software system aimed at helping users to keep track of their expenses easily.
+Software solution aimed at helping users to keep track of their expenses easily.
 
 #### Technologies 🚀
 - ASP.NET Core 6 for API and Class Libraries
