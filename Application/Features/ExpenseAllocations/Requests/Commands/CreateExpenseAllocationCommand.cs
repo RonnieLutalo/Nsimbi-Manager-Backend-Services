@@ -6,7 +6,7 @@ namespace Application.Features.ExpenseAllocations.Requests.Commands
 {
     public class CreateExpenseAllocationCommand : IRequest<BaseCommandResponse>
     {
-        public CreateExpenseAllocationtDto ExpenseAllocationDto { get; set; }
+        public CreateExpenseAllocationDto ExpenseAllocationDto { get; set; }
 
     }
 }
