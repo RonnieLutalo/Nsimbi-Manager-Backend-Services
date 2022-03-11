@@ -9,7 +9,7 @@ Software system aimed at helping users to keep track of their expenses easily.
 - MediatR 
 - AutoMapper for Domain model object mapping
 - Fluent Validation 
-- xUnit for UnitTest in ASP.NET Core
+- xUnit for UnitTests in ASP.NET Core
 - React.js for Frontend Client Application
 - BootStrap for Frontend/UI application styling 
 
