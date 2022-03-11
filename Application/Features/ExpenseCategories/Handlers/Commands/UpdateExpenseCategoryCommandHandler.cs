@@ -3,22 +3,18 @@ using Application.DTOs.ExpenseCategory.Validators;
 using Application.Exceptions;
 using Application.Features.ExpenseCategories.Requests.Commands;
 using Application.Contracts.Persistence;
-using Domain;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Application.Features.ExpenseCategories.Handlers.Commands
 {
-    public class UpdateExpenseCommandHandler : IRequestHandler<UpdateExpenseCategoryCommand, Unit>
+    public class UpdateExpenseCategoryCommandHandler : IRequestHandler<UpdateExpenseCategoryCommand, Unit>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public UpdateExpenseCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public UpdateExpenseCategoryCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
