@@ -1,7 +1,7 @@
 ﻿
 namespace Application.DTOs.ExpenseAllocation
 {
-    public class CreateExpenseAllocationtDto : IExpenseAllocationDto
+    public class CreateExpenseAllocationDto : IExpenseAllocationDto
     {
         public int ExpenseCategoryId { get; set; }
         public string Description { get; set; }

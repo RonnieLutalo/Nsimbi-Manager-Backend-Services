@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Application.DTOs.ExpenseAllocation.Validators
 {
-    public class CreateExpenseAllocationDtoValidator : AbstractValidator<CreateExpenseAllocationtDto>
+    public class CreateExpenseAllocationDtoValidator : AbstractValidator<CreateExpenseAllocationDto>
     {
         private readonly IExpenseCategoryRepository _expenseCategoryRepository;
 
