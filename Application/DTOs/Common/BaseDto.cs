@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Application.DTOs.Common
+﻿namespace Application.DTOs.Common
 {
     public abstract class BaseDto
     {

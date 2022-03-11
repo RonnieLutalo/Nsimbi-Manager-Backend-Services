@@ -1,8 +1,7 @@
-﻿using Application.DTOs.Common;
-
+﻿
 namespace Application.DTOs.ExpenseAllocation
 {
-    public class UpdateExpenseAllocationDto : BaseDto, IExpenseAllocationDto
+    public class CreateExpenseAllocationtDto : IExpenseAllocationDto
     {
         public int ExpenseCategoryId { get; set; }
         public string Description { get; set; }
