@@ -1,8 +1,12 @@
-﻿using MediatR;
+﻿using Application.Profiles;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
 using System.Reflection;
+using System.Text;
 
-namespace Application.Application
+namespace Application
 {
     public static class ApplicationServicesRegistration
     {

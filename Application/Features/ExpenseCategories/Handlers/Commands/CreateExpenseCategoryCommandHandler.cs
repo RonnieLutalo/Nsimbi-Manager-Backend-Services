@@ -1,9 +1,13 @@
 ﻿using AutoMapper;
 using Application.DTOs.ExpenseCategory.Validators;
+using Application.Exceptions;
 using Application.Features.ExpenseCategories.Requests.Commands;
 using Application.Contracts.Persistence;
 using Domain;
 using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Application.Responses;

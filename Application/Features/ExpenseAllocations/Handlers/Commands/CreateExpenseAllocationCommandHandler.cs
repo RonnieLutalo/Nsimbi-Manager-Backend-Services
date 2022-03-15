@@ -1,14 +1,22 @@
 ﻿using AutoMapper;
 using Application.DTOs.ExpenseAllocation.Validators;
+using Application.Exceptions;
 using Application.Features.ExpenseAllocations.Requests.Commands;
+using Application.Features.ExpenseCategories.Requests.Commands;
 using Application.Contracts.Persistence;
 using Application.Responses;
 using Domain;
 using MediatR;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Models;
 using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
 using Application.Constants;
 
 namespace Application.Features.ExpenseAllocations.Handlers.Commands

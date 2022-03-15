@@ -1,9 +1,14 @@
 ﻿using AutoMapper;
+using Application.DTOs;
 using Application.DTOs.ExpenseAllocation;
 using Application.Features.ExpenseAllocations.Requests.Queries;
+using Application.Features.ExpenseCategories.Requests;
+using Application.Features.ExpenseCategories.Requests.Queries;
 using Application.Contracts.Persistence;
 using MediatR;
+using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Domain;

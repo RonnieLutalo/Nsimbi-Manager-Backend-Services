@@ -1,13 +1,19 @@
 ﻿using AutoMapper;
+using Application.DTOs;
 using Application.DTOs.ExpenseAllocation;
 using Application.Features.ExpenseAllocations.Requests.Queries;
+using Application.Features.ExpenseCategories.Requests;
+using Application.Features.ExpenseCategories.Requests.Queries;
 using Application.Contracts.Persistence;
 using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Application.Contracts.Identity;
 
-namespace Features.ExpenseAllocations.Handlers.Queries
+namespace Application.Features.ExpenseAllocations.Handlers.Queries
 {
     public class GetExpenseAllocationDetailRequestHandler : IRequestHandler<GetExpenseAllocationDetailRequest, ExpenseAllocationDto>
     {
@@ -25,9 +31,9 @@ namespace Features.ExpenseAllocations.Handlers.Queries
         }
         public async Task<ExpenseAllocationDto> Handle(GetExpenseAllocationDetailRequest request, CancellationToken cancellationToken)
         {
-            var expenseAllocations = _mapper.Map<ExpenseAllocationDto>(await _expenseAllocationRepository.GetExpenseAllocationWithDetails(request.Id));
-            expenseAllocations.RegularAppUser = await _userService.GetRegularAppUser(expenseAllocations.RegularAppUserAccountHolderId);
-            return expenseAllocations;
+            var expenseAllocation = _mapper.Map<ExpenseAllocationDto>(await _expenseAllocationRepository.GetExpenseAllocationWithDetails(request.Id));
+            expenseAllocation.RegularAppUser = await _userService.GetRegularAppUser(expenseAllocation.RegularAppUserAccountHolderId);
+            return expenseAllocation;
         }
     }
 }
