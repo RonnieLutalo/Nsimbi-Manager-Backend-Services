@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Identity.Configurations
 {
@@ -13,7 +17,7 @@ namespace Identity.Configurations
                 {
                     Id = "cac43a6e-f7bb-4448-baaf-1add431ccbbf",
                     Name = "RegularAppUser",
-                    NormalizedName = "REGULAR-APP-USER"
+                    NormalizedName = "EMPLOYEE"
                 },
                 new IdentityRole
                 {

@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Identity.Configurations;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Identity
 {

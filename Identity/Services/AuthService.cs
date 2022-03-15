@@ -1,13 +1,17 @@
 ﻿using Application.Constants;
 using Application.Contracts.Identity;
+using Application.Models.Identity;
 using Identity.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Application.Models.Identity;
+using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Identity.Services
 {
