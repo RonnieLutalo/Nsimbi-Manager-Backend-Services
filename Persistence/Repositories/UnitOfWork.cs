@@ -1,11 +1,11 @@
 ﻿
 using AutoMapper;
 using Application.Constants;
+using Application.Contracts.Persistence;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Application.Contracts.Persistence;
 
 namespace Persistence.Repositories
 {

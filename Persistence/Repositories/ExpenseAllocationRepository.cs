@@ -1,8 +1,10 @@
 ﻿using Application.Contracts.Persistence;
 using Domain;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Persistence.Repositories
@@ -34,11 +36,11 @@ namespace Persistence.Repositories
 
         public async Task<ExpenseAllocation> GetExpenseAllocationWithDetails(int id)
         {
-            var expenseAllocations = await _dbContext.ExpenseAllocations
+            var expenseAllocation = await _dbContext.ExpenseAllocations
                 .Include(q => q.ExpenseCategory)
                 .FirstOrDefaultAsync(q => q.Id == id);
 
-            return expenseAllocations;
+            return expenseAllocation;
         }
     }
 }

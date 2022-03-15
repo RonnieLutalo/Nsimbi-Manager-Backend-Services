@@ -15,12 +15,12 @@ namespace Persistence.Configurations.Entities
                 new ExpenseCategory
                 {
                     Id = 1,
-                    CategoryName = "Groceries"
+                    CategoryName = "Transportation"
                 },
                 new ExpenseCategory
                 {
                     Id = 2,
-                    CategoryName = "Transport & Logistics"
+                    CategoryName = "Groceries"
                 }
             );
         }
