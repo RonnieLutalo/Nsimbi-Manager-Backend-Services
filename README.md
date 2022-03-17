@@ -1,6 +1,6 @@
 ## Expense Tracker
 
-### Overview 📜
+### Overview
 An intuitive Solution aimed at helping users keep track of their expenses easily.
 
 #### Motivation 💡
