@@ -10,14 +10,13 @@ Instead of keeping a diary or a log of the expenses, this solution enables the u
 With the help of this application, the user can manage their expenses on a daily, weekly and monthly basis. Users can insert and delete transactions as well as can generate and save their reports. The goal is to hava a solution that appeals to the user more and is easy to understand.
 
 #### Technologies Used🚀
-- ASP.NET Core 6 for API and MVC Razor Pages
-- .NET Stadard 2.1 for Class Libraries
-- Entity Framework Core and Microsoft SQL Server for Data Access
-- MediatR 
-- AutoMapper for Domain model and Data Transfer Object mapping
-- Fluent Validation 
-- xUnit for Unit Tests in ASP.NET Core
-- React.js and MVC Razor Pages for Frontend Client Applications
+- [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) 6 for API and MVC Razor Pages
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) and Microsoft SQL Server for Data Access
+- [MediatR](https://www.nuget.org/packages/MediatR/) 
+- [AutoMapper](https://automapper.org/) for Domain model and Data Transfer Object mapping
+- [Fluent Validation](https://fluentvalidation.net/) 
+- [xUnit](https://xunit.net/) for Unit Tests in ASP.NET Core
+- [React.js](https://reactjs.org/) and MVC Razor Pages for Frontend Client Applications
 - BootStrap for styling Frontend/UI/Client Applications 
 
 ### System Architecture 
