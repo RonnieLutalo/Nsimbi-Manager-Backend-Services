@@ -16,7 +16,7 @@ With the help of this application, the user can manage their expenses on a daily
 - [AutoMapper](https://automapper.org/) for Domain model and Data Transfer Object mapping
 - [Fluent Validation](https://fluentvalidation.net/) 
 - [xUnit](https://xunit.net/) for Unit Tests in ASP.NET Core
-- [React.js](https://reactjs.org/) and MVC Razor Pages for Frontend Client Applications
+- [React.js](https://reactjs.org/) and [MVC-Razor Pages](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) for Frontend Client Applications
 - [BootStrap](https://getbootstrap.com/) for styling Frontend/UI/Client Applications 
 
 ### System Architecture 
