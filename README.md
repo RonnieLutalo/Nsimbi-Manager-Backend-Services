@@ -3,7 +3,7 @@
 ### Overview
 An intuitive Solution aimed at helping users to keep track of their expenses easily.
 
-### Motivation 💡
+#### Motivation 💡
 This solution attempts to free the user with as much as possible the burden of manual calculation and to keep track of their expenditure.
 Instead of keeping a diary or a log of the expenses, this solution enables the user to not just keep the control on the expenses but also to generate and save reports.
 
