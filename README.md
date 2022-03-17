@@ -1,9 +1,15 @@
 ## Expense Tracker
 
 ### Overview
-Software solution aimed at helping users to keep track of their expenses easily.
+An intuitive Solution aimed at helping users to keep track of their expenses easily.
 
-#### Technologies 🚀
+### Motivation 💡
+This solution attempts to free the user with as much as possible the burden of manual calculation and to keep track of their expenditure.
+Instead of keeping a diary or a log of the expenses, this solution enables the user to not just keep the control on the expenses but also to generate and save reports.
+
+With the help of this application, the user can manage their expenses on a daily, weekly and monthly basis. Users can insert and delete transactions as well as can generate and save their reports. The goal is to hava a solution that appeals to the user more and is easy to understand.
+
+#### Technologies Used🚀
 - ASP.NET Core 6 for API and MVC Razor Pages
 - .NET Stadard 2.1 for Class Libraries
 - Entity Framework Core and Microsoft SQL Server for Data Access
