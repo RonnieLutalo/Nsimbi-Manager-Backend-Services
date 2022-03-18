@@ -1,5 +1,7 @@
 ## Expense Tracker
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eb6d633f60114262a00dce7de2670d60)](https://app.codacy.com/gh/RonnieLutalo/ExpenseTracker?utm_source=github.com&utm_medium=referral&utm_content=RonnieLutalo/ExpenseTracker&utm_campaign=Badge_Grade_Settings)
+
 ### Overview
 This solution attempts to free the user with as much as possible the burden of manual calculation and to keep track of their expenditure.
 
