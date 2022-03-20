@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.4.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Constants\" />
+    <Folder Include="Contracts\Identity\" />
+    <Folder Include="Contracts\Persistence\" />
+    <Folder Include="DTOs\Common\" />
+    <Folder Include="DTOs\ExpenseAllocation\Validators\" />
+    <Folder Include="DTOs\ExpenseCategory\Validators\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Features\ExpenseAllocations\Handlers\Commands\" />
+    <Folder Include="Features\ExpenseAllocations\Handlers\Queries\" />
+    <Folder Include="Features\ExpenseAllocations\Requests\Commands\" />
+    <Folder Include="Features\ExpenseAllocations\Requests\Queries\" />
+    <Folder Include="Features\ExpenseCategories\Handlers\Commands\" />
+    <Folder Include="Features\ExpenseCategories\Handlers\Queries\" />
+    <Folder Include="Features\ExpenseCategories\Requests\Commands\" />
+    <Folder Include="Features\ExpenseCategories\Requests\Queries\" />
+    <Folder Include="Models\Identity\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Profiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExpenseTracker.Domain\ExpenseTracker.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
