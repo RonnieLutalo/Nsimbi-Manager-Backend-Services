@@ -5,12 +5,12 @@
 ### Overview
 An intuitive solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their expenditure easily.
 
-#### Motivation 💡
+#### Motivation
 Instead of keeping a diary or a log of the expenses, this solution enables the user to not just keep the control on the expenses but also to generate and save reports.
 
 With the help of this solution, the user can manage their expenses on a daily, weekly and monthly basis. Users can insert and delete transactions as well as can generate and save their reports. The goal is to have a solution that appeals to the user more and is easy to understand.
 
-#### Technologies Used🚀
+#### Technologies Used
 - [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) 6 for API and MVC Razor Pages
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) and Microsoft SQL Server for Data Access
 - [MediatR](https://www.nuget.org/packages/MediatR/) 
