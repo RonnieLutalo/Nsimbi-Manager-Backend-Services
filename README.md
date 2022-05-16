@@ -3,7 +3,9 @@
 ## Expense Tracker
 
 ### Overview
-An intuitive solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their expenditure easily.
+An intuitive solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their expenditure easily. 
+
+**Note:** This project is currently still a **Work In Progress** 😊
 
 ### Motivation
 Instead of keeping a diary or a log of the expenses, this solution enables the user to not just keep the control on expenses but also to generate and save reports.
