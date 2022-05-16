@@ -3,7 +3,7 @@
 ## Expense Tracker
 
 ### Overview
-An intuitive solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their expenditure easily. 
+An intuitive AI & Machine Learning powered application/solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their expenditure easily. The project was built from scratch using Onion/Clean Architecture, [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet), [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) and Microsoft SQL Server for Data Access, React.js, API, MVC Razor Pages, [MediatR](https://www.nuget.org/packages/MediatR/), [AutoMapper](https://automapper.org/) for Domain model and Data Transfer Object mapping, [Fluent Validation](https://fluentvalidation.net/), [xUnit](https://xunit.net/) for Unit Tests in ASP.NET Core, [React.js](https://reactjs.org/) and [MVC-Razor Pages](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) for Frontend Client Applications, [Microsoft Azure](https://azure.microsoft.com/en-us/).
 
 **Note:** This project is currently still a **Work In Progress** 😊
 
@@ -13,17 +13,4 @@ Instead of keeping a diary or a log of the expenses, this solution enables the u
 With the help of this solution, the user can manage their expenses on a daily, weekly and monthly basis. Users can insert and delete transactions as well as can generate and save their reports. The goal is to have a solution that appeals to the user more and is easy to understand.
 
 ## System Architecture 
-This System uses the Layered/N-Tier Architectural pattern and also follows the [Onion Architecture (Clean Architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) guidelines for it's implementation.
-
-### Data/Domain Model
-
-### Technologies Used
-- [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) 6 for API and MVC Razor Pages
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) and Microsoft SQL Server for Data Access
-- [MediatR](https://www.nuget.org/packages/MediatR/) 
-- [AutoMapper](https://automapper.org/) for Domain model and Data Transfer Object mapping
-- [Fluent Validation](https://fluentvalidation.net/) 
-- [xUnit](https://xunit.net/) for Unit Tests in ASP.NET Core
-- [React.js](https://reactjs.org/) and [MVC-Razor Pages](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) for Frontend Client Applications
-- [BootStrap](https://getbootstrap.com/) for styling Frontend/UI/Client Applications 
-
+This System currently uses the Layered/N-Tier Architectural pattern and also follows the [Onion Architecture (Clean Architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and Domain Driven Design (DDD)guidelines for it's implementation.
