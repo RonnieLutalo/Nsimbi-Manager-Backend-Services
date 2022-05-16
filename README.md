@@ -13,4 +13,4 @@ Instead of keeping a diary or a log of the expenses, this solution enables the u
 With the help of this solution, the user can manage their expenses on a daily, weekly and monthly basis. Users can insert and delete transactions as well as can generate and save their reports. The goal is to have a solution that appeals to the user more and is easy to understand.
 
 ## System Architecture 
-This System currently uses the Layered/N-Tier Architectural pattern and also follows the [Onion Architecture (Clean Architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and Domain Driven Design (DDD)guidelines for it's implementation.
+This System currently uses the Layered/N-Tier Architectural pattern and also follows the [Onion Architecture (Clean Architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and Domain Driven Design (DDD) guidelines for it's implementation.
