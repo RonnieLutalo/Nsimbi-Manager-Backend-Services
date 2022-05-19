@@ -1,6 +1,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/44e0255e3b034055a02a1b92855582b3)](https://www.codacy.com/gh/RonnieLutalo/ExpenseTracker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RonnieLutalo/ExpenseTracker&amp;utm_campaign=Badge_Grade)
 
-## Nsiimbi Smart Finance Tracker
+## Nsimbi Smart Finance Tracker
 
 ### Overview
 An intuitive AI & Machine Learning powered application/solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their expenditure easily with assisted Financial Management & Advice. The project was built from scratch using tools & technologies like, [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet), [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) and [PostgreSQL](https://www.postgresql.org/) for Data Access, [MediatR](https://www.nuget.org/packages/MediatR/), [AutoMapper](https://automapper.org/) for Domain model and Data Transfer Object mapping, [Fluent Validation](https://fluentvalidation.net/), [xUnit](https://xunit.net/) for Unit Tests in ASP.NET Core, React.js using the [Next.js](https://nextjs.org/) framework and [MVC-Razor Pages](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) for Frontend Client Applications, [Microsoft Azure](https://azure.microsoft.com/en-us/) for cloud services.
