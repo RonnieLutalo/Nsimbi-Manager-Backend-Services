@@ -8,9 +8,9 @@ An intuitive AI & Machine Learning powered application/solution that attempts to
 **Note:** This project is currently still a **Work In Progress** 😊
 
 ### Motivation
-Instead of keeping a diary or a log of the expenses, this solution enables the user to not just keep the control on expenses but also to generate and save reports.
+58.9% of Ugandans don’t care how they spend money according to Bank Of Uganda according to [Dorothy Nakaweesi, Monday, May 16, 2022(Daily Monitor)](https://www.monitor.co.ug/uganda/business/finance/58-9-of-ugandans-don-t-care-how-they-spend-money-bou-3816478). "More than half of working adult Ugandans, which represents 58.9 percent do not care how they spend their money, according to a report by Bank of Uganda (BoU).". This is mostly a direct result of lack of financial literacy. According to [Eronie Kamukama, 03 January, 2021](https://www.monitor.co.ug/uganda/business/prosper/how-financial-literacy-improves-spending-habits-1665146), "financial literacy improves spending habits". The need to bridge this gap gave birth to the idea of **Nsimbi Smart Finance Tracker**. 
 
-With the help of this solution, the user can manage their expenses on a daily, weekly and monthly basis. Users can insert and delete transactions as well as can generate and save their reports. The goal is to have a solution that appeals to the user more and is easy to understand.
+With the help of this solution, the user can manage their expenses on a daily, weekly and monthly basis as well as Artificial Intelligence (AI) assisted Financial Management and Advice.
 
 ## System Architecture 
 This System currently uses the Layered/N-Tier Architectural pattern and also follows the [Onion Architecture (Clean Architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and Domain Driven Design (DDD) guidelines for it's implementation.
