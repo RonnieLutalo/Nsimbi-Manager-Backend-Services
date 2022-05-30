@@ -23,9 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseTracker.Persistence"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseTracker.Identity", "ExpenseTracker.Identity\ExpenseTracker.Identity.csproj", "{C0EA907C-4C8B-40FE-869C-1B97F8E7231B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.Api", "ExpenseTracker.Api\ExpenseTracker.Api.csproj", "{2D9E65C6-B1E3-4398-A117-B4000070C667}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.MVC", "ExpenseTracker.MVC\ExpenseTracker.MVC.csproj", "{B515F8CC-DBD7-4C65-828A-8383B7AB9F41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseTracker.Api", "ExpenseTracker.Api\ExpenseTracker.Api.csproj", "{2D9E65C6-B1E3-4398-A117-B4000070C667}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +51,6 @@ Global
 		{2D9E65C6-B1E3-4398-A117-B4000070C667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D9E65C6-B1E3-4398-A117-B4000070C667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D9E65C6-B1E3-4398-A117-B4000070C667}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B515F8CC-DBD7-4C65-828A-8383B7AB9F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B515F8CC-DBD7-4C65-828A-8383B7AB9F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B515F8CC-DBD7-4C65-828A-8383B7AB9F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B515F8CC-DBD7-4C65-828A-8383B7AB9F41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,7 +65,6 @@ Global
 		{6880A0EA-59E7-43C7-84F5-D775D1E9B336} = {1BE8DB73-8A05-41B6-B4F3-3F34BA017F02}
 		{C0EA907C-4C8B-40FE-869C-1B97F8E7231B} = {1BE8DB73-8A05-41B6-B4F3-3F34BA017F02}
 		{2D9E65C6-B1E3-4398-A117-B4000070C667} = {B5A730B5-D5EF-46C9-A69A-CE67268B1082}
-		{B515F8CC-DBD7-4C65-828A-8383B7AB9F41} = {2FD29E71-EF9D-43F5-8204-182010476D56}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A25886C0-96EB-46B2-ACEA-635FAF701ED9}
