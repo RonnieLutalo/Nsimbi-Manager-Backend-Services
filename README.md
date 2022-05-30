@@ -1,6 +1,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/44e0255e3b034055a02a1b92855582b3)](https://www.codacy.com/gh/RonnieLutalo/ExpenseTracker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RonnieLutalo/ExpenseTracker&amp;utm_campaign=Badge_Grade)
 
-[![.NET](https://github.com/RonnieLutalo/Nsimbi-Smart-Finance-Tracker/actions/workflows/dotnetCI.yml/badge.svg?branch=master)](https://github.com/RonnieLutalo/Nsimbi-Smart-Finance-Tracker/actions/workflows/dotnetCI.yml)
+[![.NET Build](https://github.com/RonnieLutalo/Nsimbi-Smart-Finance-Tracker/actions/workflows/dotnetCI.yml/badge.svg?branch=master)](https://github.com/RonnieLutalo/Nsimbi-Smart-Finance-Tracker/actions/workflows/dotnetCI.yml)
 
 ## Nsimbi Smart Finance Tracker
 
