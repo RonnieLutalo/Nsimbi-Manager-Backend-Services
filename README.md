@@ -3,7 +3,7 @@
 ## Nsimbi Tracker
 
 ### Overview
-A smart and intuitive application/solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their finances and expenditure easily using Artificial Intelligence (AI) assisted Financial Management & Advice with the help of various Machine Learning techniques, models, algorithms and implementations. To provide a simple, custom, unique and tailored experience to a user in realtime, the application improves (gets smarter) as it is used over time. All this in one place by simply using an application on a mobile device.  
+A smart and intuitive application/solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their finances and expenditure easily using Artificial Intelligence (AI) assisted Financial Management & Advice with the help of various Machine Learning techniques, models, algorithms and implementations. To provide a simple, custom, unique and tailored experience to a user in realtime, the application improves (gets smarter) as it is used over time. All a user needs to use this technology is a simple application on their mobile device.  
 
 **Note:** This project is currently still a **Work In Progress** 😊
 
