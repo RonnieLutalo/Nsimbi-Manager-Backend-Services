@@ -1,9 +1,9 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/44e0255e3b034055a02a1b92855582b3)](https://www.codacy.com/gh/RonnieLutalo/ExpenseTracker/dashboard?
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/44e0255e3b034055a02a1b92855582b3)](https://www.codacy.com/gh/RonnieLutalo/ExpenseTracker/dashboard?)
 
 ## Nsimbi Tracker
 
 ### Overview
-A smart, intuitive AI & Machine Learning powered application/solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their expenditure easily with Artificial Intelligece (AI) assisted Financial Management & Advice. 
+A smart and intuitive application/solution that attempts to free the user from as much as possible the burden of manual calculation while keeping track of their finances and expenditure easily using Artificial Intelligece (AI) assisted Financial Management & Advice with the help of various Machine Learning techniques, models, algorithms and implementations to provide simple custom Financial Advice and guidence experience to a user in realtime. 
 
 **Note:** This project is currently still a **Work In Progress** 😊
 
