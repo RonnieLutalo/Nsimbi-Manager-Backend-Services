@@ -3,7 +3,7 @@
 ## Nsimbi Tracker
 
 ### Overview
-A smart and intuitive application that helps users keep track of their finances easily using AI-assisted Financial Management through a simple application on their mobile device. To provide a unique and tailor-made experience for the user, the application improves (gets smarter) as it is used over time.  
+A smart AI-assisted Finance Manager that aims to help you make more informed personal finance decisions easily. To provide a unique and tailor-made experience for the user, the mobile application improves (gets smarter) as it is used over time.
 
 **Note:** This project is currently still a **Work In Progress** 😊
 
