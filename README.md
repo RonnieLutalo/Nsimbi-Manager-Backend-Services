@@ -3,7 +3,7 @@
 ## Nsimbi Manager
 
 ### Overview
-A smart AI-assisted Finance Manager that aims to help you make more informed personal finance decisions easily. To provide a unique and tailor-made experience for the user, the mobile application improves (gets smarter) as it is used over time.
+A smart AI-assisted Finance Manager that aims to help you make more informed personal finance decisions easily. To provide a unique and tailor-made experience for the user, the mobile application improves (gets smarter) as it is used over time. Nsimbi Manager aims to be **"Your Personal Finance Manager"**
 
 **Note:** This project is currently still a **Work In Progress** 😊
 
