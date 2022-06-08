@@ -1,10 +1,10 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/44e0255e3b034055a02a1b92855582b3)](https://www.codacy.com/gh/RonnieLutalo/ExpenseTracker/dashboard?)
 
-## Nsimbi Manager
+## Nsimbi Manager Backend Services
 
 ### Overview
 
-Backend for a smart AI-assisted Financial Manager that aims to help you make more informed personal finance decisions easily. To provide a unique and tailor-made experience just for you, the mobile application improves (gets smarter) as you use it over time. Nsimbi Manager aims to be **"Your Free Personal Finance Manager"**. 
+Backend Services for a smart AI-assisted Financial Manager that aims to help you make more informed personal finance decisions easily. To provide a unique and tailor-made experience just for you, the mobile application improves (gets smarter) as you use it over time. Nsimbi Manager aims to be **"Your Free Personal Finance Manager"**. 
 
 **Note:** This project is currently still a **Work In Progress** 😊
 
